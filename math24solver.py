@@ -10,7 +10,8 @@ def main():
         num2 = sys.argv[2]
         num3 = sys.argv[3]
         num4 = sys.argv[4]
-
+        if float(num1) == 0 or float(num2) == 0 or float(num3) == 0 or float(num4) == 0:
+            raise ValueError("Numbers cannot be zero.")
         nums = [num1,num2,num3,num4]
         ops = ['+', '-', '*', '/']
         resultset = set()
