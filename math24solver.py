@@ -27,6 +27,8 @@ def main():
                                         if val == 24:
                                             resultset.add(estr)
         
+        if not resultset:
+            resultset.add("There are no solutions.")
         output_list = list(resultset)
         print(json.dumps(output_list))
         sys.stdout.flush()
